@@ -4,4 +4,5 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-pair_plot = sns.pairplot(sns.load_dataset["dataset.csv"])
+data = sns.load_dataset("dataset.csv")
+sns.countplot(x="department", y="salary", data=data)
